@@ -45,15 +45,31 @@ When oncologists receive this analysis, they can:
 
 ### Prerequisites
 
-- make sure data, results and work directories exist in the dataset ex: 
+- make sure data, results and work directories exist in the project datasets.  ex: 
 
-  - work : /domino/datasets/local/<domino project name>/oncology_data
+Domino File System Based Projects
+
+  - work : /domino/datasets/local/<domino project name>/work
   - data: /domino/datasets/local/<domino project name>/oncology_data 
   - results: /domino/datasets/local/<domino project name>/oncology_results
 
+Git based Projects
+  - work : /mnt/data/<domino project name>/work
+  - data: /mnt/data/<domino project name>/oncology_data 
+  - results: /mnt/data/<domino project name>/oncology_results
+
+  ```
+  mkdir -p /mnt/data/$DOMINO_PROJECT_NAME/work
+  ```
+
 - make sure to update the netflow configs to specify correct hardware tier of your Domino.
 
-- make sure to update the netflow configs specify the correct compute enviornment in image mapping.
+- make sure to update the netflow configs specify the correct compute enviornment in imageMap mapping.
+Ex:  
+```
+'ubuntu:20.04':'Domino Standard Environment Py3.10 R4.5'
+```
+ubuntu:20.04 used in the Nextflow pipeline is mapped to a local Domino compute Environment Domino Standard Environment Py3.10 R4.5.
 
 - Domino Data Lab Compute environment with Nextfuse plugin
 
