@@ -1,7 +1,7 @@
 
 // Parameters
-params.input_dir = '/domino/datasets/local/nextfuse/oncology_data'
-params.output_dir = '/domino/datasets/local/nextfuse/oncology_results'
+params.input_dir = '/mnt/data/nextflow-demo/oncology_data'
+params.output_dir = '/mnt/data/nextflow-demo/oncology_results'
 params.min_coverage = 10
 params.min_variant_freq = 0.05
 
