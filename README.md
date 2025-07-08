@@ -49,14 +49,14 @@ When oncologists receive this analysis, they can:
 
 Domino File System Based Projects
 
-  - work : /domino/datasets/local/<domino project name>/work
-  - data: /domino/datasets/local/<domino project name>/oncology_data 
-  - results: /domino/datasets/local/<domino project name>/oncology_results
+  - work: /domino/datasets/local/<Your_domino project name>/work
+  - data: /domino/datasets/local/<Your_domino project name>/oncology_data 
+  - results: /domino/datasets/local/<Your_domino project name>/oncology_results
 
 Git based Projects
-  - work : /mnt/data/<domino project name>/work
-  - data: /mnt/data/<domino project name>/oncology_data 
-  - results: /mnt/data/<domino project name>/oncology_results
+  - work : /mnt/data/<Your_domino project name>/work
+  - data: /mnt/data/<Your_domino project name>/oncology_data 
+  - results: /mnt/data/<Your_domino project name>/oncology_results
 
   ```
   mkdir -p /mnt/data/$DOMINO_PROJECT_NAME/work
