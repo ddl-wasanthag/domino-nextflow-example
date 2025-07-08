@@ -62,9 +62,9 @@ Git based Projects
   mkdir -p /mnt/data/$DOMINO_PROJECT_NAME/work
   ```
 
-- make sure to update the netflow configs to specify correct hardware tier of your Domino.
+- make sure to update the nextflow configs to specify correct hardware tier of your Domino.
 
-- make sure to update the netflow configs specify the correct compute enviornment in imageMap mapping.
+- make sure to update the nextflow configs specify the correct compute enviornment in imageMap mapping.
 Ex:  
 ```
 'ubuntu:20.04':'Domino Standard Environment Py3.10 R4.5'
